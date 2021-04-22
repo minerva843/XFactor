@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SVG Avatars for jQuery - Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/prettify.css" rel="stylesheet">
+    <link href="css/documentation.css" rel="stylesheet">
+    <script>
+        var shiftWindow = function() { scrollBy(0, -50); };
+        window.addEventListener("hashchange", shiftWindow);
+        function load() { if (window.location.hash) shiftWindow(); }
+    </script>
+</head>
+
+<body>
+    
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#main">SVG Avatars</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#update">Update</a></li>
+                <li><a href="#setup">Setup</a></li>
+                <li><a href="#files">Files</a></li>
+                <li><a href="#html">HTML</a></li>
+                <li><a href="#css">CSS</a></li>
+                <li><a href="#integration">Integration</a></li>
+                <li><a href="#credits">Credits</a></li>
+                <li><a href="#changelog">Changelog</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div>
+    <div class="bg-color-white" id="main">
+        <div class="content-md container">
+            <div class="row">
+                <div class="col-md-12"><h2>&ldquo;SVG Avatars Generator for jQuery&rdquo; Documentation</h2></div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="well">
+                        <p>
+                            <b>Latest version:</b> <samp>1.5</samp><br>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="well">
+                        <p>Thank you for the purchasing of <b>SVG Avatars Generator for jQuery</b>!<br>
+                        If you have any questions that are beyond the scope of this help file, please feel free to email via the contact form on my profile page on <a href="http://codecanyon.net/user/DeeThemes#contact">CodeCanyon</a>.<br>
+                        If you like this script please rate it with <b>5 stars</b>. Thanks so much!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="bs-callout bs-callout-danger">
+                        <h4>IMPORTANT</h4>
+                        <p>SVG Avatars Generator script uses an AJAX technology for the working and has a PHP server part. Thus it will not appear on your page if that page is opened directly from your HDD in a browser (like file:///C:/path/to/your_page.html). Use this script on a working local (like XAMP, LAMP, etc.) or a global web-server.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-color-sky-light" id="overview">
+        <div class="content-md container">
+            <div class="row">
+                <div class="col-md-12"><h3 class="page-header">1. Overview of the pack</h3></div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p>After downloading you will find the following folders in the archive:</p>
+                    <ul>
+                        <li>documentation</li>
+                        <li>for_develop</li>
+                        <li>for_upload</li>
+                    </ul>
+                    <p><b>documentation:</b> As title said this is the documentation.</p>
+                    <p><b>for_develop:</b> This folder contains only one JavaScript file: <samp>svgavatars.core.js</samp>, which is a non-minified version of the main script for your customization.</p>
+                    <p><b>for_upload:</b> This one is for uploading to your server. The folder contains all the necessary files in a minified form to reduce your bandwidth and loading time.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-color-white" id="update">
+        <div class="content-md container">
+            <div class="row">
+                <div class="col-md-12"><h3 class="page-header">2. Update (ver. 1.5)</h3></div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p><b>Important: </b>There is a new file structure since ver 1.4 and up. All the language files now are placed in the <b>svgavatars > js > languages</b> folder, and they are completely recoded. Also all the options are placed in a separate JS file: <b>svgavatars > js > svgavatars.defaults.js</b></p>
+                    <p>For correct work of this script please follow these steps:</p>
+                    <ol>
+                      <li>If you made any customization in CSS file <b>svgavatars > css > svgavatars.css</b> please backup it first.</li>
+                      <li>If you use "Save" function, backup all users created avatars from <b>svgavatars > ready-avatars</b> folder</li>
+                      <li>If you made any correction of existing <b>translation</b> or made your owns, backup them first.</li>
+                      <li>If you made any changes of <b>settings</b>, please backup them first.</li>
+                    </ol>
+                    <p>After that please update the new files from ver 1.5 with your backed up data, delete all files from <b>svgavatars</b> folder and upload new ones with your new customization.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-color-sky-light" id="setup">
+        <div class="content-md container">
+            <div class="row">
+                <div class="col-md-12"><h3 class="page-header">3. Setup</h3></div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <ol>
+                        <li>Open the <b>svgavatars.defaults.js</b> file from the <b>for_upload > LivIconsEvo > svgavatars > js</b> folder in preferred text editor (not in MS Word!).</li>
+                        <li>Adjust the default options inside <code>svgAvatarsOptions</code> function, according to the information below. All the options has a comment line, however here are special notes for some of them:
+                            <ul>
+                                <li>
+                                    Please pay attention to the <code>pathToFolder</code> option. If you upload the <b>svgavatars</b> directory to the root one on your server, the value of <code>pathToFolder</code> option should be either <code>'/svgavatars/'</code> or <code>'http://www.your_site.com/svgavatars/'</code> or <code>'https://www.your_site.com/svgavatars/'</code> if you use an encryption.
+                                </li>
+                                <li>
+                                    <code>delta_sat</code> and <code>delta_val</code> are used for calculating shadows and hightlights of choosen colors in the script itself. The HSV (hue, saturation, value) model is used for this process. Please look at this picture:<br><br>
+                                    <img src="img/delta_sat_val.png" alt="delta_sat and delta_val"><br><br>
+                                    The higher value of <code>delta_sat</code> and <code>delta_val</code> - the more contrast will be implemented. You can play with this settings, but please don't set very high values.
+                                </li>
+                                <li>
+                                    For correct work of uploading of created avatars to secure.gravatar.com you must have PHP cURL extension is enabled on your server (contact your hosting provider of how to). Also see <a href="http://php.net/manual/en/book.curl.php" target="_blank">PHP: cURL - Manual</a> for more information.
+                                </li>
+                            </ul>
+                         </li>
+                        <li>Upload to your server all the files and directories from the <b>for_upload</b> folder.</li>
+                        <li>
+                            Please be sure that directories' permissions of <b>ready-avatars</b> and <b>temp-avatars</b> are set to <b>755 (better choice)</b> or <b>777 (not recommended)</b>.
+                        </li>
+                        <li>If you already use <b>jQuery</b> on your site <b>do not</b> upload it again.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-color-white" id="files">
+        <div class="content-md container">
+            <div class="row">
+                <div class="col-md-12"><h3 class="page-header">4. Avatars files</h3></div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p>All avatars files are split into two part: temporary and saved ones.</p>
+                    <p>Temporary avatars files, which users download and share, are stored in the <b>svgavatars > temp-avatars</b> folder and can be periodically deleted with the help of cronjob, for example (please ask your hosting provider of how to).</p>
+                    <p>All avatars saved by users on your server (with the help of <code>hideSaveButton: false</code> option) are stored in the <b>svgavatars > ready-avatars</b> folder. You can also put links to these files into your custom database, but you need to write your own additional PHP code, which you can add into the <b>svgavatars > php > save-ready-avatar.php</b> file.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-color-sky-light" id="html">
+        <div class="content-md container">
+            <div class="row">
+                <div class="col-md-12"><h3 class="page-header">5. HTML Structure</h3></div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p>After uploading you need to declare a CSS file in the <code>&lt;head></code> section and JavaScript files before the closing <code>&lt;/body></code> tag in your HTML page's code.</p>
+                    
+                    <div class="bs-callout bs-callout-info">
+                        <h5>NOTE</h5>
+                        <p>It's recommended to place JS declarations before the closing <code>&lt;/body></code> tag at the <b>end</b> of your HTML document, not inside the <code>&lt;head>&lt;/head></code> section.</p>
+                    </div>
+
+                    <p><b>JavaScript</b> declarations can be done in the <b>two (2)</b> ways:</p>
+                </div>
+            </div>
+            <div class="row">
+                <h4 class="either">EITHER</h4>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <p>If you already use any components of tools JavaScript pack, include only the missing ones.</p>
+                </div>
+                <div class="col-md-9">
+<pre class="prettyprint linenums">&lt;head>
+    ...
+    &lt;!-- all your other CSS files go here--&gt;
+    ...
+    &lt;link href="svgavatars/css/spectrum.css" rel="stylesheet"&gt;
+    &lt;link href="svgavatars/css/svgavatars.css" rel="stylesheet"&gt;
+    &lt;https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700|Roboto:400,300,500,700&subset=latin,cyrillic-ext,cyrillic,latin-ext" rel="stylesheet"&gt;
+&lt;/head>
+
+&lt;body&gt;
+    ...
+    &lt;!-- All your page's code goes here --&gt;
+    ...
+    &lt;script src="path/to/your_jQuery_copy.js"&gt;&lt;/script&gt;
+    ...
+    &lt;!-- Your other script files go here --&gt;
+    ...
+    &lt;script src="svgavatars/js/tools/svg.min.js"&gt;&lt;/script&gt;
+    &lt;script src="svgavatars/js/tools/jquery.scrollbar.js"&gt;&lt;/script&gt;
+    &lt;script src='svgavatars/js/tools/spectrum.min.js'&gt;&lt;/script&gt;
+    &lt;script src="svgavatars/js/tools/rgbcolor.js"&gt;&lt;/script&gt; 
+    &lt;script src="svgavatars/js/tools/StackBlur.js"&gt;&lt;/script&gt;
+    &lt;script src="svgavatars/js/tools/canvg.min.js"&gt;&lt;/script&gt;
+
+    &lt;script src="svgavatars/js/svgavatars.defaults.js"&gt;&lt;/script&gt;
+    &lt;script src="svgavatars/js/languages/svgavatars.en.js"&gt;&lt;/script&gt;
+    &lt;script src="svgavatars/js/svgavatars.core.min.js"&gt;&lt;/script&gt;
+&lt;/body&gt;</pre> 
+                    <div class="bs-callout bs-callout-info">
+                        <p>Change <code>svgavatars/js/languages/svgavatars.en.js</code> file with your localized one.</p>
+                    </div>
+                    <div class="bs-callout bs-callout-danger">
+                        <p><b>The order</b> of the declarations is important.</p>
+                        <p>If you <b>already</b> use <b>jQuery</b> on your site <b>do not</b> declare it again. If not yet, please don't forget to edit the <code>path/to/your_jQuery_copy.js</code></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <h4 class="either">OR</h4>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <p>You can declare only the one JS file <b>LivIconsEvo.Tools.js</b>, which contains all the necessary libraries.</p>
+                </div>
+                <div class="col-md-9">
+<pre class="prettyprint linenums">&lt;head>
+    ...
+    &lt;!-- all your other CSS files go here--&gt;
+    ...
+    &lt;link href="svgavatars/css/spectrum.css" rel="stylesheet"&gt;
+    &lt;link href="svgavatars/css/svgavatars.css" rel="stylesheet"&gt;
+    &lt;https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700|Roboto:400,300,500,700&subset=latin,cyrillic-ext,cyrillic,latin-ext" rel="stylesheet"&gt;
+&lt;/head>
+
+&lt;body&gt;
+    ...
+    &lt;!-- All your page's code goes here --&gt;
+    ...
+    &lt;script src="path/to/your_jQuery_copy.js"&gt;&lt;/script&gt;
+    ...
+    &lt;!-- Your other script files go here --&gt;
+    ...
+    &lt;script src="svgavatars/js/svgavatars.tools.js"&gt;&lt;/script&gt;
+    &lt;script src="svgavatars/js/svgavatars.defaults.js"&gt;&lt;/script&gt;
+    &lt;script src="svgavatars/js/languages/svgavatars.en.js"&gt;&lt;/script&gt;
+    &lt;script src="svgavatars/js/svgavatars.core.min.js"&gt;&lt;/script&gt;
+&lt;/body&gt;</pre> 
+                    <div class="bs-callout bs-callout-info">
+                        <p>Change <code>svgavatars/js/languages/svgavatars.en.js</code> file with your localized one.</p>
+                    </div>
+                    <div class="bs-callout bs-callout-danger">
+                        <p><b>The order</b> of the declarations is important.</p>
+                        <p>If you <b>already</b> use <b>jQuery</b> on your site <b>do not</b> declare it again. If not yet, please don't forget to edit the <code>path/to/your_jQuery_copy.js</code></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p>Now you are ready to use SVG Avatars Generator.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-color-white" id="css">
+        <div class="content-md container">
+            <div class="row">
+                <div class="col-md-12"><h3 class="page-header">6. CSS Structure</h3></div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <p>All the necessary styles are placed in the <strong>svgavatars > css > svgavatars.css</strong> file.</p>
+                </div>
+                <div class="col-md-9">
+                    <p>If your site design let you to expand the generator to full width you can delete "max-width" value at the top of the CSS file or set your own one:</p>
+<pre class="prettyprint">#svgAvatars {
+  max-width: 960px;
+  margin: 0 auto;
+}</pre>
+                    <p>If you will not use "Roboto" font, change line 39:</p>
+                    <pre class="prettyprint">font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;</pre>
+                    <p>If you want to change any color scheme please find this section near the end of the CSS file:</p>
+<pre class="prettyprint">/******************* Color schemes *******************/
+
+/* LIGHT scheme */
+#svga-container.svga-light,
+...</pre>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-color-sky-light" id="integration">
+        <div class="content-md container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="page-header">7. Integration</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p>And now all you need is to place the one line of code somewhere in your <code>&lt;body&gt;</code> section</p>
+                    <pre class="prettyprint linenums">&lt;div id="svgAvatars"&gt;&lt;/div&gt;</pre>
+                </div>
+                <div class="col-md-12">
+                    <div class="bs-callout bs-callout-danger">
+                        <p>The id value must be exactly <code>svgAvatars</code> (case sensitive).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-color-white" id="credits">
+        <div class="content-md container">
+            <div class="row">
+                <div class="col-md-12"><h3 class="page-header">8. Credits</h3></div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <ul>
+                      <li>jQuery team for the outstanding <a href="http://jquery.com">work</a></li>
+                      <li>Wout Fierens the author of <a href="http://svgjs.com">SVG JS</a> lib</li>
+                      <li>Brian Grinstead the author of <a href="http://bgrins.github.io/spectrum/">Spectrum Colorpicker</a></li>
+                      <li>Yuriy Khabarov the author of <a href="https://github.com/gromo/dslib/tree/master/jquery.scrollbar">jQuery Custom Scrollbar plugin</a></li>
+                      <li>Gabe Lerner the author of <a href="https://code.google.com/p/canvg/">Canvg - SVG parser and renderer script</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-color-sky-light">
+        <div class="content-md container">
+            <div class="row">
+                <div class="col-md-12"><h3 class="page-header">Thank you!</h3></div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p>Once again, thank you so much for purchasing this item. As I said at the beginning, I'd be glad to help you if you have any questions relating to this package. No guarantees, but I'll do my best to assist. If you have a more general question relating to SVG Avatars Generator, you might contact me via my user page contact form <a href="http://codecanyon.net/user/DeeThemes#contact">here</a>. And again if you like this script please rate it with 5 stars.<br><br>Best regards,<br>Dee</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-color-white" id="changelog">
+        <div class="content-md container">
+            <div class="row">
+                <div class="col-md-12"><h3 class="page-header">Changelog</h3></div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p>
+                        <samp>
+                            <b>Version 1.5 (July 01, 2019)</b>
+                            <br>
+                            -- changed the PHP part of the item to meet security standards 
+                            <br>
+                            -- fixed JS code to work with the latest versions of jQuery
+                            <br>
+                            -- made some JS code changes to match "WordPress plugin requirements" by Envato because this script is used in a WordPress plugin
+                        </samp>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p>
+                        <samp>
+                            <b>Version 1.4 (May 25, 2019)</b>
+                            <br>
+                            -- added a choice of a custom file name of avatars for download
+                            <br>
+                            -- added to possibility to leave only one gender
+                            <br>
+                            -- changed a file structure (see the documentation)
+                            <br>
+                            -- changed files with localization translations
+                            <br>
+                            -- fixed the svgavatars/php/save-ready-avatar.php in a part of a custom code's place 
+                            <br>
+                            -- removed share on Facebook functionality. Facebook deprecated and disallowed it in their API
+                            <br>
+                            -- removed share on Google Plus functionality. Google Plus social network is closed
+                            <br>
+                            -- made JavaScript code changes to match "WordPress plugin requirements" by Envato because this script is used in a WordPress plugin
+                        </samp>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p>
+                        <samp>
+                            <b>Version 1.3.2 (January 06, 2015)</b>
+                            <br>
+                            -- fix of general layout for correct view in new versions of Google Chrome
+                        </samp>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p>
+                        <samp>
+                            <b>Version 1.3.1 (November 21, 2014)</b>
+                            <br>
+                            -- fix for Gravatar uploading (new method is used)
+                        </samp>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p>
+                        <samp>
+                            <b>Version 1.3 (January 24, 2014)</b>
+                            <br>
+                            -- added a possibility to upload a created avatar to secure.gravatar.com via public Gravatar's XML-RPC API
+                            <br>
+                            -- added 4 translations
+                            <br>
+                            -- bug fix for Windows 8 tablets and phones
+                            <br>
+                            -- changed JS files structure (see the documentation)
+                            <br>
+                            -- changed CSS file
+                        </samp>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p>
+                        <samp>
+                            <b>Version 1.2.1 (January 13, 2014)</b>
+                            <br>
+                            -- bug fix with empty watermark on an avatar for sharing
+                        </samp>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p>
+                        <samp>
+                            <b>Version 1.2 (January 11, 2014)</b>
+                            <br>
+                            -- added share functionality (Facebook, Twitter, Pinterest, Google Plus)
+                            <br>
+                            -- slightly changes in CSS
+                        </samp>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p>
+                        <samp>
+                            <b>Version 1.1 (January 08, 2014)</b>
+                            <br>
+                            -- added glasses
+                            <br>
+                            -- added facial hair for males
+                            <br>
+                            -- added ability to make bald head
+                            <br>
+                            -- slightly changes in CSS
+                        </samp>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p><samp><b>Version 1.0 (January 03, 2014)</b><br>-- Initial Realize</samp></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="js/jquery-1.12.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/prettify.min.js"></script>
+    <script>
+        !function ($) {
+            $(function(){
+                window.prettyPrint && prettyPrint();
+            });
+        }(window.jQuery);
+    </script>
+    
+</body>
+</html>

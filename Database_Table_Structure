@@ -1,0 +1,421 @@
+CREATE table xf_mst_project(
+	id int(11) AUTO_INCREMENT PRIMARY KEY,
+	project_id int varchar(255) NOT NULL UNIQUE,
+	group_id int varchar(255) references xf_mst_group(id),
+	user_id int (255) references xf_mst_users(id),
+	project_name varchar(500),
+	project_type varchar(255),
+	venue varchar(1000),
+	venue_address varchar(500),
+	setup_start_date_time DATETIME DEFAULT CURRENT_TIMESTAMP,
+	setup_end_date_time DATETIME,
+	standby_start_date_time DATETIME,
+	standby_end_date_time DATETIME,
+	strike_start_date_time DATETIME,
+	strike_end_date_time DATETIME,
+	event_start_date_time DATETIME,
+	event_end_date_time DATETIME,
+	project_audience_type varchar(255),
+	project_description text,
+	project_header_visual varchar(255),
+	project_status varchar(255),
+	client_company_name varchar(500),
+	client_company_address varchar(500),
+	point_contact_name varchar(255),
+	area_code varchar(255),
+	point_contact_mobile varchar(50),
+	point_contact_email varchar(255), 
+	additional_notes TEXT,
+	key TEXT NULL,
+	register_url varchar(255) NULL,
+	register_header_image TEXT NULL,
+	created_date_time DATETIME DEFAULT CURRENT_TIMESTAMP,
+	ctreated_id_address varchar(255),
+	created_xmanage_id varchar(255),
+	created_username varchar(255),
+	last_edited_date_time DATETIME,
+	last_edited_id_address varchar(255),
+	last_edited_xmanage_id varchar(255),
+	last_edited_username varchar(255)
+	status TINYTEXT NOT NULL DEFAULT(1),
+);
+
+
+CREATE TABLE xf_mst_users(
+	id int(11) AUTO_INCREMENT PRIMARY KEY,
+	project_id int varchar references xf_mst_project(id),
+	guest_id int varchar references xf_mst_guests(id),
+	xmanage_id varchar(255) UNIQUE NULL,
+	first_name varchar(255),
+	last_name varchar(255),
+	username varchar(255) UNIQUE NULL,
+	account_create_method varchar(255) NULL,
+	profile_photo MEDIUMTEXT NULL,
+	email varchar(255) UNIQUE,
+	password varchar(255) NULL,
+	area_code varchar(255) NULL,
+	mobile varchar(255) NULL,
+	birthday DATE NULL,
+	salutation varchar(50) NULL,
+	gender varchar(50) NULL,
+	tel varchar(255) NULL,
+	did varchar(255) NULL,
+	extension varchar(255) NULL,
+	company_name varchar(255),
+	company_address varchar(255) NULL,
+	designation varchar(255) NULL,
+	remark_1 varchar(255) NULL,
+	remark_2 varchar(255) NULL,
+	remark_3 varchar(255) NULL,
+	remark_4 varchar(255) NULL,
+	remark_5 varchar(255) NULL,
+	loginotp varchar(10) NULL,
+	qr_code TEXT NULL,
+	user_type varchar(255) NULL,
+	status TINYTEXT NOT NULL DEFAULT(1),
+	created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+	modified DATETIME DEFAULT CURRENT_TIMESTAMP
+
+);
+
+
+CREATE TABLE xf_mst_group(
+	id int(11) AUTO_INCREMENT PRIMARY KEY,
+	group_name varchar(255),
+	description TEXT NULL,
+	status varchar(255) NOT NULL DEFAULT('live'),
+	created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+	modified DATETIME DEFAULT CURRENT_TIMESTAMP
+
+);
+
+
+CREATE TABLE xf_mst_activity_history(
+	id int(11) AUTO_INCREMENT PRIMARY KEY,
+	xmanage_id references xf_mst_users(xmanage_id),
+	group_id int references xf_mst_group(id),
+	project_id int varchar references xf_mst_project(id),
+	activity_title varchar(255),
+	date_time DATETIME DEFAULT CURRENT_TIMESTAMP,
+	description TEXT NULL
+
+);
+
+
+CREATE TABLE xf_mst_on_demand_content(
+	id int(11) AUTO_INCREMENT PRIMARY KEY,
+	group_id int references xf_mst_group(id),
+	project_id int varchar references xf_mst_project(id),
+	oncontent_id varchar(255) NOT NULL UNIQUE,
+	oncontent_owner varchar(255),
+	oncontent_description TEXT,
+	oncontent_tag TEXT,
+	oncontent_type varchar(255),
+	file_name varchar(255),
+	file_type varchar(255),
+	file_size varchar(255),
+	created_date_time DATETIME DEFAULT CURRENT_TIMESTAMP,
+	ctreated_id_address varchar(255),
+	created_xmanage_id varchar(255),
+	created_username varchar(255),
+	last_edited_date_time DATETIME,
+	last_edited_id_address varchar(255),
+	last_edited_xmanage_id varchar(255),
+	last_edited_username varchar(255)
+);
+
+
+CREATE TABLE xf_mst_video_stream(
+	id int(11) AUTO_INCREMENT PRIMARY KEY,
+	group_id int references xf_mst_group(id),
+	project_id int varchar references xf_mst_project(id),
+	video_stream_id varchar(255) NOT NULL UNIQUE,
+	video_stream_source varchar(255),
+	video_stream_description TEXT,
+	video_stream_url TEXT,
+	created_date_time DATETIME DEFAULT CURRENT_TIMESTAMP,
+	ctreated_id_address varchar(255),
+	created_xmanage_id varchar(255),
+	created_username varchar(255),
+	last_edited_date_time DATETIME,
+	last_edited_id_address varchar(255),
+	last_edited_xmanage_id varchar(255),
+	last_edited_username varchar(255)
+);
+
+
+CREATE TABLE xf_mst_audio_stream(
+	id int(11) AUTO_INCREMENT PRIMARY KEY,
+	group_id int references xf_mst_group(id),
+	project_id int varchar references xf_mst_project(id),
+	audio_stream_id varchar(255) NOT NULL UNIQUE,
+	audio_stream_source varchar(255),
+	audio_stream_description TEXT,
+	audio_stream_url TEXT,
+	created_date_time DATETIME DEFAULT CURRENT_TIMESTAMP,
+	ctreated_id_address varchar(255),
+	created_xmanage_id varchar(255),
+	created_username varchar(255),
+	last_edited_date_time DATETIME,
+	last_edited_id_address varchar(255),
+	last_edited_xmanage_id varchar(255),
+	last_edited_username varchar(255)
+);
+
+
+CREATE TABLE xf_mst_guests(
+	id int(11) AUTO_INCREMENT PRIMARY KEY,
+	group_id int references xf_mst_group(id),
+	project_id int varchar references xf_mst_project(id),
+	guest_id varchar(255) NOT NULL UNIQUE,
+	guest_type varchar(255),
+	reg_type varchar(255),
+	mass_upload_filename varchar(255),
+	audio_stream_description TEXT,
+	audio_stream_url TEXT,
+	created_date_time DATETIME DEFAULT CURRENT_TIMESTAMP,
+	ctreated_id_address varchar(255),
+	created_xmanage_id varchar(255),
+	created_username varchar(255),
+	last_edited_date_time DATETIME,
+	last_edited_id_address varchar(255),
+	last_edited_xmanage_id varchar(255),
+	last_edited_username varchar(255)
+);
+
+
+CREATE TABLE xf_mst_floor_plan(
+	id int(11) AUTO_INCREMENT PRIMARY KEY,
+	group_id int references xf_mst_group(id),
+	project_id int varchar references xf_mst_project(id),
+	floor_plan_id int varchar(255) NOT NULL UNIQUE,
+	floor_plan_name varchar(255),
+	floor_plan_file_name varchar(255),
+	floor_plan_grid_type varchar(255),
+	floor_plan_drop_point varchar(255),
+	each_square varchar(255), 
+	file_name varchar(255),
+	file_type varchar(255),
+	file_size varchar(255),
+	created_date_time DATETIME DEFAULT CURRENT_TIMESTAMP,
+	ctreated_id_address varchar(255),
+	created_xmanage_id varchar(255),
+	created_username varchar(255),
+	last_edited_date_time DATETIME,
+	last_edited_id_address varchar(255),
+	last_edited_xmanage_id varchar(255),
+	last_edited_username varchar(255)
+);
+
+
+CREATE TABLE xf_mst_zones( 
+	id int(11) AUTO_INCREMENT PRIMARY KEY,
+	group_id int references xf_mst_group(id),
+	project_id int varchar references xf_mst_project(id),
+	flor_plan_id int references xf_mst_floor_plan(id),
+	zone_id varchar(255) NOT NULL UNIQUE,
+	zone_number varchar(255),
+	zone_type varchar(255),
+	zone_name varchar(255),
+	created_date_time DATETIME DEFAULT CURRENT_TIMESTAMP,
+	ctreated_id_address varchar(255),
+	created_xmanage_id varchar(255),
+	created_username varchar(255),
+	last_edited_date_time DATETIME,
+	last_edited_id_address varchar(255),
+	last_edited_xmanage_id varchar(255),
+	last_edited_username varchar(255)
+);
+
+
+CREATE TABLE xf_mst_walk_about_view_content(
+	id int(11) AUTO_INCREMENT PRIMARY KEY,
+	group_id references xf_mst_group(id),
+	project_id int varchar references xf_mst_project(id),
+	flor_plan_id int references xf_mst_floor_plan(id),
+	zone_id int references xf_mst_zone(id),
+	video_set_id varchar(255) NOT NULL UNIQUE,
+	video_set_name varchar(255),
+	video_assigned_zone varchar(255),
+	image_assigned_booth varchar(255),
+	created_date_time DATETIME DEFAULT CURRENT_TIMESTAMP,
+	ctreated_id_address varchar(255),
+	created_xmanage_id varchar(255),
+	created_username varchar(255),
+	last_edited_date_time DATETIME,
+	last_edited_id_address varchar(255),
+	last_edited_xmanage_id varchar(255),
+	last_edited_username varchar(255)
+);
+
+CREATE TABLE xf_mst_icon_positions(
+	id int(11) AUTO_INCREMENT PRIMARY KEY,
+	group_id references xf_mst_group(id),
+	project_id int references xf_mst_project(id),
+	flor_plan_id int references xf_mst_floor_plan(id),
+	zone_id int references xf_mst_zone(id),
+	content_set_id int references xf_mst_content(id),
+	info_icon_id varchar(255),
+	created_date_time DATETIME DEFAULT CURRENT_TIMESTAMP,
+	ctreated_id_address varchar(255),
+	created_xmanage_id varchar(255),
+	created_username varchar(255),
+	last_edited_date_time DATETIME,
+	last_edited_id_address varchar(255),
+	last_edited_xmanage_id varchar(255),
+	last_edited_username varchar(255)
+);
+
+Create table xf_mst_chat (
+	id int(11) AUTO_INCREMENT PRIMARY KEY,
+	group_id int, 
+	chat_log_id int,
+	salutation varchar(255),
+	first_name varchar(255),
+	last_name varchar(255),
+	displayed varchar(255),
+	gender varchar(255),
+	image varchar(255),
+	company_name varchar(255),
+	company_address TEXT,
+	designation varchar(255),
+	created_date_time DATETIME,
+	ctreated_id_address varchar(255),
+	created_xmanage_id varchar(255),
+	created_username varchar(255),
+	last_edited_date_time DATETIME,
+	last_edited_id_address varchar(255),
+	last_edited_xmanage_id varchar(255),
+	last_edited_username varchar(255)
+);
+
+create table xf_mst_guest_list (
+	id int AUTO_INCREMENT PRIMARY KEY,
+	group_id int,
+	project_id int,
+	guest_list_id varchar(255),
+	mass_upload_file_name varchar(255),
+	file_type varchar(255),
+	file_size varchar(255),
+	number_of_inserts varchar(255),
+	insert_entries varchar(255),
+	created_date_time DATETIME,
+	ctreated_id_address varchar(255),
+	created_xmanage_id varchar(255),
+	created_username varchar(255),
+	last_edited_date_time DATETIME,
+	last_edited_id_address varchar(255),
+	last_edited_xmanage_id varchar(255),
+	last_edited_username varchar(255)
+);
+
+create table xf_mst_program_info (
+	id int AUTO_INCREMENT PRIMARY KEY,
+	group_id int,
+	project_id int,
+	flor_plan_id int,
+	zone_id int,
+	program_id varchar(255),
+	program_start_date_time DATETIME,
+	program_end_date_time DATETIME,
+	program_presenter varchar(255),
+	program_title varchar(255),
+	program_details TEXT,
+	program_image varchar(255),
+	program_location varchar(255),
+	program_duration varchar(255),
+	program_status varchar(255),
+	created_date_time DATETIME,
+	ctreated_id_address varchar(255),
+	created_xmanage_id varchar(255),
+	created_username varchar(255),
+	last_edited_date_time DATETIME,
+	last_edited_id_address varchar(255),
+	last_edited_xmanage_id varchar(255),
+	last_edited_username varchar(255)
+);
+
+create table xf_mst_post_info (
+	id int AUTO_INCREMENT PRIMARY KEY,
+	group_id int,
+	project_id int,
+	flor_plan_id int,
+	zone_id int,
+	post_id varchar(255),
+	info_icon_id varchar(500),
+	post_type varchar(255),
+	post_owner varchar(255),
+	post_title varchar(255),
+	post_details TEXT,
+	post_image_video_file_size varchar(255),
+	post_assignment TEXT,
+	image_file_count varchar(255),
+	video_file_count varchar(255),
+	total_file_count varchar(255),
+	website TEXT,
+	shopping_cart_item_id varchar(255),
+	price varchar(255),
+	status varchar(255),
+	created_date_time DATETIME,
+	ctreated_id_address varchar(255),
+	created_xmanage_id varchar(255),
+	created_username varchar(255),
+	last_edited_date_time DATETIME,
+	last_edited_id_address varchar(255),
+	last_edited_xmanage_id varchar(255),
+	last_edited_username varchar(255)
+);
+
+Table xf_mst_info_icon_info (
+	id int AUTO_INCREMENT PRIMARY KEY,
+	group_id int,
+	project_id int,
+	flor_plan_id int,
+	zone_id int,
+	info_icon_id varchar(255), 
+	content_set_id int,
+	post_id int,
+	info_icon_name varchar(255),
+	assigned_zone_names varchar(255),
+	info_icon_position varchar(255),
+	assigned_post_owner TEXT,
+	assigned_post_name varchar(255),
+	created_date_time DATETIME,
+	ctreated_id_address varchar(255),
+	created_xmanage_id varchar(255),
+	created_username varchar(255),
+	last_edited_date_time DATETIME,
+	last_edited_id_address varchar(255),
+	last_edited_xmanage_id varchar(255),
+	last_edited_username varchar(255)
+);
+
+create table xf_mst_content_set_info {
+	id int AUTO_INCREMENT PRIMARY KEY,
+	group_id int,
+	project_id int,
+	flor_plan_id int,
+	zone_id int,
+	content_set_id varchar(255),
+	content_set_name varchar(255),
+	project_name varchar(255),
+	floor_plan_name varchar(255),
+	assigned_zone_names TEXT,
+	video_file_count varchar(255),
+	video_files_and_size TEXT,
+	image_file_count varchar(255),
+	image_file_and_size varchar(255),
+	created_date_time DATETIME,
+	ctreated_id_address varchar(255),
+	created_xmanage_id varchar(255),
+	created_username varchar(255),
+	last_edited_date_time DATETIME,
+	last_edited_id_address varchar(255),
+	last_edited_xmanage_id varchar(255),
+	last_edited_username varchar(255)
+}
+
+
+
+
+

@@ -1,0 +1,4 @@
+{
+    "title": "Dynamic Content",
+    "content": "Bubble markup not preset in HTML.  Instead title and content are retrieved via AJAX when the bubble widget is invoked."
+}

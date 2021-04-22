@@ -1,0 +1,1228 @@
+.file-select-button.bowse {
+    right: 5px;
+}	
+.post-code a {
+    font-weight: 600;
+    font-size: 12px;
+}
+.select-box h5 {
+    padding-left: 17px;
+}
+.zone-info h3 {
+    color: #000;
+}
+/* p.current-status-1 {
+    float: left;
+} */
+.ADD-PROJECT-IMT .delete-sorting span.close {
+    border: 1px solid #000 !important;
+}
+.zone-info h3 {
+    color: #000;
+}
+.ADD-PROJECT-IMT .modal-content span {
+    font-size: 18px;
+}
+.ADD-PROJECT-IMT .modal-content p {
+    color: #000;
+}
+.avatar-main .user-location select {
+    border: 1px solid #000 !important;
+}
+.small-avtar .zone-label {
+    color: #000;
+}
+.post-code p {
+    font-weight: 600;
+    font-size: 12px;
+	text-decoration: underline;
+}
+.ADD-PROJECT-IMT .file-upload .file-select .file-select-name {
+    min-width: 302px !important;
+}
+.ADD-PROJECT-IMT .floor-planadd .file-upload .file-select .file-select-button {
+    right: -81px !important;
+    padding: 0 25px;
+}
+.table-striped #tblerows input[type="checkbox"]:before{
+    content: "";
+    -webkit-appearance: none;
+    background-color: #00b050;
+    border: 2px solid #000;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    padding: 5px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-left: 7px;
+    border-radius: 2px;
+    top: 13px;
+	
+}
+/* .floor-palnadd-grid .demo1 img.rect1 {
+    height: 430px!important;
+    width: 761px!important;
+    bottom: 0px;
+    left: 1px;
+} */
+.scale-info p {
+    font-size: 1.28rem !important;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    margin-left: 0px;
+    color: #000;
+}
+.selecteduser button#addZone {
+    width: 24% !important;
+}
+.table-striped #tblerows input[type="checkbox"] {
+    width: 0px !important;
+    margin: -14px 0px;
+    margin-left: 0px;
+}
+.selecteduser button#addZone:hover {
+    width: 24% !important;
+}
+.register-form h4 {
+    font-size: 14px !important;
+    color: #000;
+	padding-bottom: 0px !important;
+}
+.middle-body select {
+    border: 1px solid #000 !important;
+}
+.leftbox-top-grid select#zonetype {
+    border: 1px solid #000 !important;
+}
+.header-prt select {
+    border: 1px solid #000 !important;
+}
+#btn5 {
+    border: 1px solid #000 !important;
+}
+.middle-body input {
+    border: 1px solid #000;
+}
+.floor-planadd textarea {
+    border: 1px solid #000 !important;
+}
+.file-upload .file-select .file-select-button {
+    border: 1px solid #000 !important;
+}
+.file-upload .file-select .file-select-name {
+    border: 1px solid #000 !important;
+}
+.col-md-5.meters-value {
+    padding-left: 0px;
+}
+.row.master-filters select,button{
+    border: 1px solid #000 !important;
+}
+.zone-info.floor-planadd select {
+    border: 1px solid #000;
+}
+.zone-info.floor-planadd span.meter-right {
+    right: 40px !important;
+}
+.add-conents .file-upload .file-select .file-select-button {
+    padding: 0 20px;
+}
+.current-status {
+    padding-top: 12px;
+}
+.add-floor-header-title h3{
+	padding-left: 159px;
+text-transform: uppercase;}
+.header-title.add-floor-header-title {
+    min-height: 50px !important;
+}
+.table-content li a {
+    border: 1px solid #ebebeb;
+}
+.add-zone-1 .nav-tabs li {
+    width: 32%;
+    margin-right: 5px;
+}
+.floor-planadd textarea {
+    text-transform: uppercase !important;
+    background: transparent;
+    padding: 6px 11px;
+	border: 1px solid #afabab;
+
+	}
+textarea#venue_address {
+    min-height: 70px !important;
+}
+p.current-status-1 {
+	font-weight: bold!important;
+    padding-right: 4px;
+    text-align: left;
+}
+.star-program input.smalimput {
+    width: 8%;
+    margin-left: 16px;
+}
+.star-program{padding-left: 0px;}
+.star-program label.col-form-label {
+    padding-left: 0px;
+    text-align: center;
+}
+.star-program label.col-form-label {
+    font-size: 12px;
+    font-weight: normal;
+    width: 6%;
+}
+/* .table_info.floor-step p {
+    line-height: 30px;
+} */
+.star-program label.col-form-label:after {
+    display: none;
+}
+.floor-planadd textarea {
+    resize: none;
+}
+.floor-planadd textarea {
+    width: 100%;
+    background: transparent;
+    border: 1px solid #afabab;
+    min-height: 40px;
+	padding-top: 6px;
+    padding-left: 12px;
+	font-size: 13px;
+	padding-bottom:0px;
+}
+.program-upload p.file-extan {
+    font-size: 11px;
+    color: #000;
+}
+.floor-planadd .star-program input.smalimput {
+    width: 9%;
+    margin-left: 15px;
+    padding: 5px;
+}
+.file-upload.choose-photo .file-select .file-select-button {
+    right: -40px;
+}
+.projectadd4 td {
+    font-size: 11px;
+    color: #000;
+	font-weight:600;
+	padding-left: 10px;
+}
+.floor-planadd p {
+    padding-top: 9px;
+	color: #000;
+	font-weight:600;
+	font-size: 12px;
+}
+
+.projectadd4 input#show {
+    width: 15px !important;
+}
+.projectadd4 input#show {
+    width: 15px !important;
+}
+ .check-box input:before{
+    content: "";
+    -webkit-appearance: none;
+    background-color: #00b050;
+    border: 1px solid #000;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    padding: 5px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-left: 0px;
+    border-radius: 10px;
+    top: 4px;
+} 
+.check-box input{width: 13px;}
+.check-box-disable{width: 13px;}
+	
+ .check-box-disable input:before{
+     content: "";
+    -webkit-appearance: none;
+    background-color: #fff;
+    border: 2px solid #000;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    padding: 5px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-left: 0px;
+    border-radius: 10px;
+    top: 4px;
+} 
+
+.projectadd4 input#disable {
+    width: 15px;
+}
+td.show {
+    width: 50px;
+}
+td.disabled {
+    width: 50px;
+}
+td.show:before {
+content:":";
+padding-right: 6px;
+}
+.projectadd4 tr:nth-child(odd) {
+    background: #d9d9d9;
+}
+.projectadd4 table {
+    margin-left: 0px;
+    width: 94%;
+}
+.field-chng{background: fff;}
+input#btn-field {
+    background: transparent;
+}
+td.field-chng {
+    width: 50px;
+	background: #fff;
+}
+.projectadd4 button.btn.btn-info.btn-lg {
+    padding: 4px 10px;
+    border: 1px solid #afabab;
+	border-radius:1px;
+    font-size: 10px;
+    width: 100%;
+    color: #333333!important;
+    outline: none;
+    text-transform: uppercase;
+    background: #fff;
+}
+button.btn.btn-default {
+    padding: 4px 10px;
+    border: 1px solid #afabab;
+	border-radius:1px;
+    font-size: 10px;
+    width: 100%;
+    color: #333333!important;
+    outline: none;
+    text-transform: uppercase;
+    background: #fff;
+	width:100px;
+}
+input#submit_remark1 {
+	padding: 4px 10px;
+    border: 1px solid #afabab;
+	border-radius:1px;
+    font-size: 10px;
+    width: 100%;
+    color: #333333!important;
+    outline: none;
+    text-transform: uppercase;
+    background: #fff;
+	margin-top:0px;
+	width:100px;
+}
+.projectadd4 .modal-dialog {
+    width: 300px;
+	
+}
+span{
+	font-size: 11px;
+}
+td.check-box {
+    width: 75px !important;
+}
+.show .pjt-content{
+    width: 320px;
+    border: 3px solid;
+    margin: 0 auto;
+	margin-top: 17%;
+}
+.pjt-content h2 {
+    font-size: 13px;
+    font-weight: 600;
+    color: #000;
+    text-align: left;
+}	
+.pjt-content .modal-header {
+    border-bottom: 0;
+    display: none;
+}
+.modal-footer {
+    border-top: 0;
+}
+.pjt-content label.col-sm-5.col-form-label {
+    font-size: 10px;
+    font-weight: 600;
+}
+.col-sm-7.field_inpt {
+    padding-left: 0px;
+}
+.check-box-disable input {
+     position: relative;
+    right: 0px;
+    width: 12px;
+}
+input.temp_remark1 {
+    WIDTH: 100%;
+	border: 1px solid #afabab;
+}
+.unchaed-show input:before {
+    content: "";
+    -webkit-appearance: none;
+    background-color: #fff;
+    border: 1px solid #000;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    padding: 5px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-left: 0px;
+    border-radius: 10px;
+    top: 4px;
+}.star-program input.smalimput {
+    width: 8%;
+    margin-left: 16px;
+}
+.star-program{padding-left: 0px;}
+.star-program label.col-form-label {
+    padding-left: 0px;
+    text-align: center;
+}
+.star-program label.col-form-label {
+    font-size: 12px;
+    font-weight: normal;
+    width: 6%;
+}
+.star-program label.col-form-label:after {
+    display: none;
+}
+.floor-planadd textarea {
+    resize: none;
+}
+.floor-planadd textarea {
+    width: 100%;
+    background: transparent;
+    border: 1px solid #afabab;
+    min-height: 40px;
+	padding-top: 6px;
+    padding-left: 12px;
+	font-size: 13px;
+	padding-bottom:0px;
+}
+.program-upload p.file-extan {
+    font-size: 11px;
+    color: #000;
+}
+.floor-planadd .star-program input.smalimput {
+    width: 9%;
+    margin-left: 15px;
+    padding: 5px;
+}
+.file-upload.choose-photo .file-select .file-select-button {
+    right: -40px;
+}
+.projectadd4 td {
+    font-size: 11px;
+    color: #000;
+	font-weight:600;
+	padding-left: 10px;
+}
+.floor-planadd p {
+    padding-top: 9px;
+	color: #000;
+	font-weight:600;
+	font-size: 12px;
+}
+
+.projectadd4 input#show {
+    width: 15px !important;
+}
+.projectadd4 input#show {
+    width: 15px !important;
+}
+/*  .check-box input:before{
+    content: "";
+    -webkit-appearance: none;
+    background-color: #00b050;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    padding: 5px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-left: 0px;
+    border-radius: 10px;
+    top: 4px;
+}  */
+ /* .check-box input:after{
+    content: "";
+    -webkit-appearance: none;
+    background-color: #00b050;
+    border: 1px solid #000;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    padding: 5px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-left: 0px;
+    border-radius: 10px;
+    top: 4px;
+}  */
+.check-box input{width: 13px;}
+.check-box-disable{width: 13px;}
+	
+/*  .check-box-disable input:before{
+     content: "";
+    -webkit-appearance: none;
+    background-color: #fff;
+    border: 2px solid #000;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    padding: 5px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-left: 0px;
+    border-radius: 10px;
+    top: 4px;
+}  */
+/*  .check-box-disable input:after{
+     content: "";
+    -webkit-appearance: none;
+    background-color: #fff;
+    border: 2px solid #000;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    padding: 5px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-left: 0px;
+    border-radius: 10px;
+    top: 4px;
+}
+.ADD-PROJECT-IMT .chk2 label:before {
+    border: 2px solid #000 !important;
+    border-radius: 10px;
+}
+.ADD-PROJECT-IMT .chk2 input:checked + label:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: 10px;
+    width: 9px;
+    height: 8px;
+    background-color: #00b050;
+    border-width: 0 2px 2px 0;
+    transform: rotate(0deg);
+    border-radius: 10px;
+}
+.chk2 label:before {
+    content: "";
+    -webkit-appearance: none;
+    background-color: #fff;
+    border: 2px solid #00b050;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    padding: 7px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-left: 5px;
+    border-radius: 2px;
+} */
+label.col-sm-4.col-form-label {
+    text-transform: uppercase;
+    color: #000;
+}
+.projectadd4 input#disable {
+    width: 15px;
+}
+td.show {
+    width: 50px;
+}
+td.disabled {
+    width: 50px;
+}
+td.show:before {
+content:":";
+padding-right: 6px;
+}
+.projectadd4 tr:nth-child(odd) {
+    background: #d9d9d9;
+}
+.projectadd4 table {
+    margin-left: 0px;
+    width: 94%;
+}
+.field-chng{background: fff;}
+input#btn-field {
+    background: transparent;
+}
+td.field-chng {
+    width: 50px;
+	background: #fff;
+}
+.file-upload .file-select .file-select-name {
+    min-width: 291px !important;
+}
+.file-upload .file-select .file-select-button {
+    right: 0px !important;
+	padding: 0 25px;
+}
+input#measurment {
+    width: 200px;
+}
+.zone-info.floor-planadd span.meter-right {
+    left: 76%;
+}
+.projectadd4 button.btn.btn-info.btn-lg {
+    padding: 4px 10px;
+    border: 1px solid #afabab;
+	border-radius:1px;
+    font-size: 10px;
+    width: 100%;
+    color: #333333!important;
+    outline: none;
+    text-transform: uppercase;
+    background: #fff;
+}
+button.btn.btn-default {
+    padding: 4px 10px;
+    border: 1px solid #000;
+    font-size: 10px;
+    width: 100%;
+    color: #333333!important;
+    outline: none;
+    text-transform: uppercase;
+    background: #fff;
+	width:100px;
+}
+input#submit_remark1 {
+	padding: 4px 10px;
+    border: 1px solid #000;
+    font-size: 10px;
+    width: 100%;
+    color: #333333!important;
+    outline: none;
+    text-transform: uppercase;
+    background: #fff;
+	margin-top:0px;
+	width:100px;
+}
+.projectadd4 .modal-dialog {
+    width: 300px;
+	
+}
+span{
+	font-size: 11px;
+}
+td.check-box {
+    width: 75px !important;
+}
+.pjt-content{
+    width: 320px;
+    border: 3px solid;
+    margin: 0 auto;
+	margin-top: 17%;
+}
+.pjt-content h2 {
+    font-size: 13px;
+    font-weight: 600;
+    color: #000;
+    text-align: left;
+}	
+.pjt-content .modal-header {
+    border-bottom: 0;
+    display: none;
+}
+.modal-footer {
+    border-top: 0;
+}
+.pjt-content label.col-sm-5.col-form-label {
+    font-size: 10px;
+    font-weight: 600;
+}
+.col-sm-7.field_inpt {
+    padding-left: 0px;
+}
+.check-box-disable input {
+     position: relative;
+    right: 0px;
+    width: 12px;
+}
+input.temp_remark1 {
+    WIDTH: 100%;
+	border: 1px solid #000;
+}
+.unchaed-show input:before {
+    content: "";
+    -webkit-appearance: none;
+    background-color: #fff;
+    border: 1px solid #000;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    padding: 5px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-left: 0px;
+    border-radius: 10px;
+    top: 4px;
+}
+.star-program input.smalimput {
+    width: 8%;
+    margin-left: 16px;
+}
+.star-program{padding-left: 0px;}
+.star-program label.col-form-label {
+    padding-left: 0px;
+    text-align: center;
+}
+.star-program label.col-form-label {
+    font-size: 12px;
+    font-weight: normal;
+    width: 6%;
+}
+.star-program label.col-form-label:after {
+    display: none;
+}
+.floor-planadd textarea {
+    width: 100%;
+    background: transparent;
+    border: 1px solid #000;
+    min-height: 40px;
+	padding-top: 6px;
+    padding-left: 12px;
+	font-size: 13px;
+	padding-bottom:0px;
+}
+.program-upload p.file-extan {
+    font-size: 11px;
+    color: #000;
+}
+.add-proj_02 textarea {
+    height: 150px ;
+    width: 391px;
+}
+.floor-planadd .star-program input.smalimput {
+    width: 9%;
+    margin-left: 15px;
+    padding: 5px;
+}
+.floor-planadd textarea {
+    resize: none;
+}	
+.current-status p{
+	font-weight: 600 !important;
+}	
+.display-step-status {
+    padding-top: 50px;
+}
+.display-step-status p {
+    line-height: 35px;
+}
+.add-project-step2 .file-upload .file-select .file-select-name {
+    line-height: 26px;
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 12px;
+    color: #333333!important;
+    border: 1px solid #afabab;
+   /*  min-width: 462px; */
+}
+.add-project-step2 .file-upload .file-select .file-select-button {
+    background: #ffffff;
+    padding: 0 30px;
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    font-weight: 600;
+    float: right;
+    border: 1px solid #afabab;
+    font-size: 12px;
+    color: #333333!important;
+    position: absolute;
+    right: -118px;
+    top: 0px;
+}	
+.add-project-step2 .floor-planadd textarea{
+    width: 580px;
+	height:200px;
+	
+}
+.floor-planadd textarea {
+    background: transparent;
+    border: 1px solid #000;
+    min-height: 40px;
+	padding-top: 6px;
+    padding-left: 12px;
+	font-size: 13px;
+	padding-bottom:0px;
+	text-transform: capitalize;
+}
+.program-upload p.file-extan {
+    font-size: 11px;
+    color: #000;
+}
+.floor-planadd .star-program input.smalimput {
+    width: 9%;
+    margin-left: 15px;
+    padding: 5px;
+}
+.col-sm-2.post-code{padding-left:0px;}
+.col-sm-7.project-visual{padding-left:0px;}
+.floor-step h5 {
+ /*    font-size: 11px !important; */
+    font-weight: 600;
+}
+.table_info-curl h5 {
+    font-weight: 600;
+    font-size: 15px !important;
+}
+.signup-content {
+    width: 100%;
+}
+ #register-form22 .section-main .signup-content {
+        margin-top: 20px;
+} 
+/* form.register-form {
+    padding: 10px 50px 20px 50px !important;
+} */
+#register-form22 .create-user .form-select {
+    height: 35px;
+}
+#register-form22 .create-user .form-group input {
+    margin-bottom: 5px;
+}
+#register-form22 .create-user .form-submit {
+    padding-top: 6px;
+}
+.signup .signup-form .form-group label {
+    width: 100%;
+}
+.create-user select {
+    width: 100%;
+}
+/*.create-user label,select,input{width: 100% !important;}*/
+.create-user select {
+    padding: 5px 10px;
+    font-size: 12px;
+    border: 1px solid #ebebeb;
+    color: #6c757d;
+    font-weight: 500;
+	line-height: 14px;
+}
+.signup-form.create-user .form-group input {
+    padding: 0px;
+	padding-left: 8px;
+    padding-right: 8px;
+	}
+.create-user input#submit-register {
+    width: auto !important;
+    margin: 0 auto;
+    float: right;
+    font-family: calibri;
+    color: #333333;
+    padding: 5px 30px 5px 30px;
+}  
+.create-user .register-form h4 {
+    padding-bottom: 0px;
+    font-weight: 600;
+    font-size: 14px;
+    margin: 5px;
+    text-align: left;
+    margin-left: 0px;   	
+}
+.create-user select#code {
+    font-size: 12px;
+	margin-bottom: 7px;
+}
+#register-form22 .signup-content {
+    height: 590px;
+}   
+
+.create-user .dob-year{width:118px}
+.create-user .dob-date{width: 118px !important;
+    margin-left: 47px;}
+.create-user .dob-month{width: 118px;
+    margin-left: 25px;}
+/* .create-user select#date {
+    padding: 6px 0px 6px 4px;
+	}
+.create-user select#month {
+    background: #fff;
+    padding: 6px 0px 6px 4px;	
+	}
+.create-user select#gender {
+    padding: 6px 0px 6px 4px;
+	}
+.create-user select#year {
+    padding: 6px 6px;
+} */
+
+   /* Media queries */
+   .birth-info {
+    width: 122px;
+    float: left;
+    /* padding: 10px 10px; */
+    padding-right: -12px;
+    /* padding-left: 5px; */
+    padding-right: 5px;
+}
+.col-md-8.DOB-INFO {
+    padding-right: 0px;
+}
+.program-tabs .nav-tabs li {
+    width: 42%;
+    text-align: center;
+}
+.col-md-3.right-text.program-tabs {
+    border-left: 1px solid #d9d9d9;
+}
+.table-text-space td:nth-child(even) {
+    color: #000 !important;
+    font-weight: 500 !important;
+}	
+.table-text-space td.top-fc {
+    padding-top: 21px;
+	padding-bottom: 10px;
+}
+td.top-fc12 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.col-sm-7.col-xl-5.program-browse{
+	padding-left: 0px;
+    padding-right: 0px;
+}
+.register-form_1  textarea#program_details {
+    width: 380px;
+	min-height: 145px;
+	max-height:145px;
+	overflow-y:scroll;
+}	
+.register-form_1 .file-upload .file-select .file-select-button {
+    right: -16px !important;
+    padding: 0 25px;
+}
+.register-form_1 .file-upload .file-select .file-select-name {
+    min-width: 276px !important;
+}
+/* p.current-status-1 {
+    width: 35%;
+    float: left;
+} */
+p.status-1 {
+    width: 52%;
+    float: left;
+}
+.register-form_1 .floor-step h5 {
+    padding-top: 30px;
+}
+input#program_end_date_time {
+    padding: 8px;
+}
+input#program_start_date_time {
+	padding: 8px;
+}
+.each-file {
+	padding-left: 0px;
+    padding-right: 0px;
+	}
+td.spc_clas {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}	
+.register-form_1 p{color:#000 !important}
+.floor_stepsz .file-upload .file-select .file-select-name {
+    min-width: 261px !important;
+}
+.table a:not([href]):not([tabindex]) {
+    color: inherit;
+    text-decoration: underline;
+}
+.table td, .table th {
+    border-top: none;
+    color: #000;;
+}
+.table td {
+    padding-left: 0px;
+}
+.program-visual{padding-left: 0px;}
+.add_project_steps .file-upload .file-select .file-select-name {
+    min-width: 283px !important;
+}
+.right-text	.table_info td{
+    width: 50%;
+}
+.add-floor-header-title h3 {
+    font-size: 1.28rem;
+    font-weight: 600;
+	color: #000;
+}
+.header-title h3 {
+    font-size: 1.28rem;
+    font-weight: 600;
+}
+input#login {
+    font-weight: 600;
+}
+.projectadd4 {
+    text-transform: uppercase;
+}
+.config-drop select {
+    border: 1px solid #000 !important;
+}
+p.current-status-1 {
+    float: left;
+    color: #000;
+}
+/* High resolution css*/
+
+@media  screen and (min-width: 1650px) {
+input#login {
+    font-weight: 600;
+}	
+.select-box h5{padding-left: 17px;}	
+.header-title h3 {
+    font-size: 1.28rem;
+    font-weight: 600;
+}	
+.col-sm-7.project-visual_11{
+	
+	padding-right: 0px;
+    padding-left: 0px;
+
+}	
+.add-floor-header-title h3 {
+    font-size: 1.28rem;
+    font-weight: 600;
+}	
+.add_project_steps_010 .file-upload .file-select .file-select-name {
+    width: 463px;
+}
+.floor_stepsz01 .file-upload .file-select .file-select-name {
+    width: 463px;
+}	
+/* .floor_stepsz01 .file-upload .file-select .file-select-name {
+    width: 261px;
+} */
+.floor_stepsz01 .file-upload .file-select .file-select-button {
+        right: 85px !important;
+}
+.right-text	.table_info td{
+    width: 50%;
+}
+.chk2 label:before {
+    border: 2px solid #000 !important;
+}	
+.floor_stepsz .file-upload .file-select .file-select-name {
+    width: 431px;
+}
+/* table.table {
+    width: 436px;
+} */
+.table td{
+    width: 436px;
+    border-top: none;
+}
+.add_project_steps .file-upload .file-select .file-select-button {
+    right: -115px !important;
+    padding: 0 25px;
+}
+.add_project_steps .file-select .file-select-name {
+    width: 464px !important;
+}	
+td.spc_clas {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}	
+	
+input#program_end_date_time {
+    padding: 12px;
+}
+input#program_start_date_time {
+	padding: 12px;
+}	
+	.zone-info.project-reg-sucess {
+    overflow-y: auto;
+    height: 675px;
+}
+p.status-1 {
+    width: 34%;
+    float: left;
+}
+	
+.register-form_1  textarea#program_details {
+    width: 529px;
+	min-height:220px;
+	max-height:220px;
+	overflow-y:scroll;
+	
+}	
+.col-sm-7.col-xl-5.program-browse{
+	padding-left: 0px;
+    padding-right: 0px;
+}
+/* .register-form_1 .file-upload .file-select .file-select-button {
+    right: -40px !important;
+    padding: 0 25px;
+} */
+/* .register-form_1 .file-upload .file-select .file-select-name {
+    width: 426px !important;
+} */
+.program-tabs .nav-tabs li {
+    width: 33%;
+    text-align: center;
+}
+.col-md-3.right-text.program-tabs {
+    border-left: 1px solid #d9d9d9;
+}
+.table-text-space p {
+    padding-top: 10px;
+}
+td.top-fp {
+    padding-top: 10px;
+}
+td.top-fc {
+    padding-top: 30px;
+	padding-bottom: 10px;
+}
+td.floor-ck {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.col-md-8.DOB-INFO {
+    padding-right: 0px;
+}	
+.birth-info {
+    width: 123px;
+    float: left;
+    /* padding: 10px 10px; */
+    padding-right: -12px;
+    /* padding-left: 5px; */
+    padding-right: 5px;
+}
+.floor_stepsz .file-upload .file-select .file-select-button {
+    right: 68px !important;
+    padding: 0 25px;
+}
+	.table_info-curl h5 {
+    font-weight: 600;
+    font-size: 15px !important;
+}
+.col-sm-7.project-visual {
+    padding-left: 0px;
+}	
+	.floor-palnadd-grid .demo1 {
+       height: 720px;
+    max-width: 1280px;
+
+}
+	.zone-label {
+    font-weight: 500;
+	color: #000;
+}
+.pjt-content {
+    width: 421px !important;
+    border: 7px solid;
+    margin: 0 auto;
+    margin-top: 33% !important;
+    height: 265px !important;
+}	
+.file-upload.add-proj_020 {
+    margin-right: -14px;
+}
+	
+.floor_steps .table_info.floor-step .progres-top span {
+    display: block !important; 
+    width: 100px!important;
+
+}
+
+span.each_digit_error {
+width: 0% !important;
+}
+.floorplan-gridsucess.floor-plan-addsucess-right h5 {
+    font-size: 20px!important;
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+    margin-bottom: 12px;
+    margin-top: 12px;
+	font-weight: 600;
+}
+#add-floor .floorplan-gridsucess .floorpalns {
+    max-height: 555px !important;
+    min-height: 555px !important;
+    overflow-y: scroll;
+    /* width: 20px; */
+}
+.floor-plan-addsucess-right {
+    width: auto;
+}
+.progress-circle span{
+	padding-bottom: 0px;
+    float: inherit;
+    left: 35px;
+    padding-top: 5px;
+}	
+.file-upload .file-select .file-select-button {
+    right: -110px !important;
+	padding: 0 25px;
+}
+/* .file-upload .file-select .file-select-name {
+    width: 465px !important;
+} */
+span.meter-right {
+    padding-top: 11px !important;
+    text-align: left !important;
+	left: 210px !important;
+}
+input.measurment {
+    width: 224px;
+}
+.col-md-5.meters-value {
+    padding-left: 0px;
+}
+/* .register-form span {
+    padding-bottom: 0px; 
+	float: inherit;
+	left: 200px;
+	padding-top: 0px;
+} */
+
+.zone-info h3 {
+    font-size: 1.28rem;
+    color: #000;
+}
+/* .table_info.floor-step p {
+    line-height: 30px;
+} */
+/* .floor-table .table-cont td {
+    padding: 10px 50px !important;
+}
+.master-floorplan .table-cont .table-title td {
+    text-align: left;
+	padding-left: 50px !important;
+} */
+.leftbox-top h3 {
+    padding-left: 173px;
+}
+textarea#project_description {
+    width: 580px;
+	height: 250px;
+}
+.ADD-PROJECT-IMT .file-upload .file-select .file-select-button {
+    right: -100px !important;
+    padding: 0 25px;
+}
+.ADD-PROJECT-IMT .file-upload .file-select .file-select-name {
+    width: 477px !important;
+}
+
+}
